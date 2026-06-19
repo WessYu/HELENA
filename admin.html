@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Área Interna | Helena Fiorese</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-login" id="admin-login">
+        <div class="admin-card">
+          <img class="admin-logo" src="assets/logo-primary.png" alt="Helena Fiorese Advogados Associados" />
+          <span class="admin-eyebrow">Área interna reservada</span>
+          <h1>Painel de gestão do atendimento</h1>
+          <p>
+            Acesso exclusivo para acompanhamento de solicitações, mensagens recebidas e inscrições
+            do escritório.
+          </p>
+
+          <form id="admin-access-form" class="admin-form" novalidate>
+            <label class="admin-field">
+              <span>Chave de acesso</span>
+              <input type="password" name="accessKey" placeholder="Informe a chave interna" required />
+            </label>
+            <button class="admin-button" type="submit">Entrar no painel</button>
+            <div id="admin-access-feedback" class="admin-feedback" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="admin-dashboard is-hidden" id="admin-dashboard">
+        <header class="dashboard-header">
+          <div>
+            <span class="admin-eyebrow">Gestão interna</span>
+            <h2>Visão geral do atendimento</h2>
+            <p>Consulte registros recentes e atualize o andamento das solicitações recebidas.</p>
+          </div>
+          <div class="dashboard-actions">
+            <button class="admin-button admin-button-ghost" id="admin-refresh" type="button">Atualizar</button>
+            <button class="admin-button admin-button-ghost" id="admin-logout" type="button">Sair</button>
+          </div>
+        </header>
+
+        <section class="stats-grid" id="admin-stats"></section>
+
+        <section class="panel-grid">
+          <article class="panel-card panel-wide">
+            <div class="panel-head">
+              <h3>Solicitações jurídicas</h3>
+              <p>Visualize protocolos, acompanhe urgências e atualize o status do atendimento.</p>
+            </div>
+            <div class="panel-list" id="admin-consultations"></div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-head">
+              <h3>Mensagens recebidas</h3>
+              <p>Contatos enviados pelo formulário principal do site.</p>
+            </div>
+            <div class="panel-list panel-list-compact" id="admin-contacts"></div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-head">
+              <h3>Newsletter</h3>
+              <p>Inscrições recentes para conteúdo e comunicação do escritório.</p>
+            </div>
+            <div class="panel-list panel-list-compact" id="admin-newsletter"></div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
