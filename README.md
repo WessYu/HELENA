@@ -1,29 +1,49 @@
-# Helena Fiorese Advogados Associados
+# HELENA — Helena Fiorese Advogados Associados
 
-Site institucional com áreas de atuação, equipe, formulários de contato, consulta de protocolo e painel administrativo local.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WessYu/WessYu/main/readme-assets/HELENA-cover.svg" alt="HELENA" width="100%" />
+</p>
 
-## Tecnologias
+<p align="center"><strong>Experiência digital para escritório jurídico com conteúdo institucional, solicitações, protocolos e gestão interna.</strong></p>
 
-- HTML
-- CSS
-- JavaScript
-- Python
-- Armazenamento em JSON
-- GitHub Pages
+<p align="center"><a href="https://wessyu.github.io/HELENA/">Live Demo</a> · <a href="https://wessyu-arquivo.vercel.app/">Portfólio</a></p>
+
+## Demo
+
+<p align="center"><img src="https://raw.githubusercontent.com/WessYu/WessYu/main/readme-assets/HELENA-demo.gif" alt="Fluxo animado do HELENA" width="720" /></p>
+
+## Interface
+
+<p align="center"><img src="https://raw.githubusercontent.com/WessYu/WESSYU-ARQUIVO/main/public/projects/helena/overview.webp" alt="Página inicial do HELENA" width="100%" /></p>
+
+## Sobre
+
+O projeto **HELENA** leva um site institucional além da apresentação visual. A interface organiza áreas de atuação e equipe, enquanto o backend local permite receber contatos, criar solicitações de análise jurídica, gerar protocolos e acompanhar atendimentos em um painel administrativo.
 
 ## Funcionalidades
 
-- Navegação responsiva
-- Apresentação do escritório e das áreas de atuação
-- Formulário de contato
-- Solicitação de análise jurídica com protocolo
-- Consulta de protocolo por e-mail
-- Inscrição em newsletter
-- Painel administrativo para contatos e solicitações
+- navegação responsiva;
+- apresentação do escritório e áreas de atuação;
+- formulário de contato;
+- solicitação de análise jurídica;
+- geração e consulta de protocolo por e-mail;
+- newsletter;
+- painel administrativo;
+- atualização de status de solicitações;
+- persistência local em JSON.
+
+## Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Python
+- JSON
+- GitHub Pages
 
 ## Estrutura
 
-```txt
+```text
 index.html
 styles.css
 script.js
@@ -37,9 +57,7 @@ assets/
 
 ## Executando localmente
 
-A versão estática pode ser aberta pelo arquivo `index.html`.
-
-Para usar os formulários e o painel administrativo:
+A versão visual pode ser aberta diretamente. Para habilitar formulários e painel:
 
 ```bash
 python server.py
@@ -47,26 +65,7 @@ python server.py
 
 Acesse `http://127.0.0.1:4173`.
 
-A chave administrativa pode ser configurada com:
-
-```bash
-HELENA_ADMIN_KEY="sua-chave-segura" python server.py
-```
-
-## Endpoints
-
-- `GET /api/health`
-- `GET /api/admin/summary`
-- `POST /api/contact`
-- `POST /api/newsletter`
-- `POST /api/consultations`
-- `POST /api/consultations/lookup`
-- `POST /api/admin/consultations/update`
-
-A publicação no GitHub Pages contém apenas a parte estática. Formulários e painel dependem do servidor local ou de um backend equivalente.
-
 ## Autor
 
-Wess
-
-[GitHub](https://github.com/WessYu)
+**Wesley Cruz**  
+[GitHub](https://github.com/WessYu) · [Portfólio](https://wessyu-arquivo.vercel.app/)
